@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="{{url_for('static', filename='imgs/logo_nova.png')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <title>Informações - Clínica AbertaMente</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div style="display: flex; background-color: rgb(45, 45, 45);height: 50px;transform: scale(1.05);">
+        <p style="margin-top: 10px;margin-left: 1000px;"><a>Rua Dr. Bacelar, 368-Sala 24 - Vila Clementino - São Paulo/SP</a></p>
+            </div>
+            
+            <div style="display: flex; background-color: rgb(142, 212, 142);height: 200px;transform: scale(1.05);" id="dv">
+                <a href="/"><img src="{{url_for('static', filename='imgs/Sagai_branco.png')}}" style="width: 180px;height:180px;margin-left: 80px;margin-top: 10px;"></a>
+                <div style="margin-top: 10px;transform: scale(0.90);margin-left: 315px;">
+                <a href="/consul"><button class="fill" style="margin-left: 300px;height: 80px;margin-top: 20px;" id="b"><p style="color:rgb(255, 255, 255);font-family: Arial, Helvetica, sans-serif;font-size: 20px;margin-top: 10px;">Agende agora</p></button></a>
+                <button class="fill" style="height: 80px;margin-top: 30px;margin-left: 20px;" id="bt6"><p style="color:rgb(255, 255, 255);font-family: Arial, Helvetica, sans-serif;font-size: 20px;margin-top: 10px;">Contato</p></button>
+                <button class="fill" style="height: 80px;margin-top: 30px;margin-left: 30px;transform: scale(1.3);font-size: 20px;color: white;" id="bt4" >☰</button>
+                </div>
+                    </div>
+<div style="display: flex;background-color: rgb(107, 107, 237);height: 800px;transform: scale(1.05);">
+    
+    <div>
+        
+<p class="fade-in-text" style="font-size: 70px;margin-left: 70px;margin-bottom: 25px;">Informações</p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e1"><u>O que é o Instituto Sagai?</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e2"><u>Quais são os preços da clínica?</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e3"><u>Onde e como a clínica atende?</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e4"><u>Tratamento de Autismo</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e5"><u>Tratamento de TDAH</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e6"><u>Tratamento de Bipolaridade</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e7"><u>Tratamento de Alcoolismo</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e8"><u>Psiquiatras</u></p>
+<p class="fade-in-text" style="font-size: 25px;margin-left: 70px;color:rgb(158, 227, 240);" id="e9"><u>Psicólogos</u></p>
+
+
+</div>
+<fieldset style="background-color: rgb(111, 141, 118);width: 800px;height: 800px;margin-left: 240px;border-color: rgb(111, 141, 118);">
+    <div hidden id="dv3" style="text-align: center;">
+        <fieldset style="background-color: rgb(78, 148, 122);border-color: green;width: 200px;margin-left: 1000px;border-radius: 10px;border-color: white;" >
+            <a href="/consul"><button class="raise" style="width: 300px;height:50px;margin-top: 20px;">Consultas</button></a>
+            <button onclick="window.scrollBy({ top: window.innerHeight+300, behavior: 'smooth' }); ira
+" class="raise" style="width: 300px;height:50px;margin-top: 20px;">Nossos profissionais</button>
+
+        </fieldset>
+    </div>
+    <p style="margin-top: 40px;margin-left: 40px;font-size: 22px;">Clique em alguma pergunta<br>para ela aparecer aqui:</p>
+<img id="im" style="filter: invert(100%);width: 80px;height: 80px;margin-left: 600px;margin-top: -180px;" src="{{url_for('static', filename='imgs/st1.png')}}">
+<fieldset style="width: 400px;height: 300px;margin-left: 40px;margin-top: 10px;">
+<p style="margin-top: 20px;margin-left: 20px;font-size: 20px;margin-right: 20px;color:aquamarine" id="t1"></p>
+<p style="margin-top: 20px;margin-left: 20px;font-size: 20px;margin-right: 20px;" id="t2"></p>
+</fieldset>
+</fieldset>
+</div>
+<script>
+
+document.getElementById('bt6').addEventListener("mouseover", (event) => {
+
+document.getElementById('dv3').hidden=false
+
+});
+document.body.onclick=function(){
+
+document.getElementById('dv3').hidden=true
+
+}
+
+function set(str1,str2,str3){
+
+const search = new URLSearchParams(window.location.search);
+
+if (search.get('q')==str1){
+
+  
+    var txt1=document.getElementById('t1')
+    var txt2=document.getElementById('t2')
+    txt1.classList.add('fade-in-text2')
+    txt2.classList.add('fade-in-text2')
+    
+    setTimeout(() => { 
+    
+    txt1.innerText=str2
+    txt2.innerText=str3
+    txt1.classList.remove('fade-in-text2')
+    txt2.classList.remove('fade-in-text2')
+    txt1.classList.add('fade-in-text')
+    txt2.classList.add('fade-in-text')
+    
+    }, 2000)
+
+}
+
+document.getElementById(str1).addEventListener("click", function(event) {
+    
+    var txt1=document.getElementById('t1')
+    var txt2=document.getElementById('t2')
+    txt1.classList.add('fade-in-text2')
+    txt2.classList.add('fade-in-text2')
+    
+    setTimeout(() => { 
+    
+    txt1.innerText=str2
+    txt2.innerText=str3
+    txt1.classList.remove('fade-in-text2')
+    txt2.classList.remove('fade-in-text2')
+    txt1.classList.add('fade-in-text')
+    txt2.classList.add('fade-in-text')
+    
+    }, 2000)
+        
+    });
+}
+
+document.getElementById("im").addEventListener("click", function(event) {
+        
+        window.scrollBy({ top:+270, behavior: 'smooth' }); ira
+
+    
+});
+
+set('e1','O que é o instituto Sagai?','O instituto Sagai é uma iniciativa para ajudar pessoas Autistas, TDAH, Bipolares e dependentes a terem uma vida melhor')
+set('e2','Quais são os preços da clínica','Os preços costumam variar, mas ficam entre 200 reais por consulta para psicólogos e 300 reais por consulta para psiquiatras')
+set('e3','Onde e como a clínica atende?','A clínica atua na rua Doutor Bacelar 368, no bairro da Vila Clementino, em São Paulo. Ela atende de forma online pelo site prontuário verde e de forma presencial.')
+set('e4','Como é o tratamento de Autismo na clínica?','O tratamento é realizado por psiquatra e/ou psicólogo. Durante o processo, o paciente passa por diversas consultas onde metódos como o ABA são aplicados para melhorar questões como as sociais e sensoriais dele, por meio de profissionais com mais de 20 anos de experiência na área')
+
+</script>
+</body>
+</html>
